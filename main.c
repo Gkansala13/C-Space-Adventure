@@ -6,10 +6,7 @@
  **/
 # include <stdio.h>
 # include <string.h>
-
-void printWelcome();
-char* responseTo();
-void printGreeting();
+# include "main.h"
 
 int main(int argc, char** argv){
     printWelcome();

@@ -1,6 +1,3 @@
 void printWelcome();
-char* responseFor();
+char* responseTo();
 void printGreeting();
-void travelTo();
-void travelGuide();
-void travelToRandomPlanet();
