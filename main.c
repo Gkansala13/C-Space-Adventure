@@ -9,6 +9,7 @@ int main(int argc, char *argv){
     printWelcome();
     printGreeting();
     whichPlanet();
+    parseJson();
 }
 
 

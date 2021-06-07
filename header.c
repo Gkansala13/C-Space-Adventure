@@ -45,3 +45,26 @@ void whichPlanet() {
         return whichPlanet();
     }   
 }
+
+struct planet {
+    char *name;
+    char *description;
+};
+
+void parseJson() {
+    FILE *fp;
+    char buffer[2048];
+
+    struct json_object *parsed_json;
+    struct json_object *name;
+
+    fp = fopen(FILE_NAME, "r");
+    fread(buffer, 2048, 1, fp);
+    fclose(fp);
+
+    parsed_json = json_tokener_parse(buffer);
+
+    json_object_object_get_ex(parsed_json, "name", &name);
+
+    printf("Thank you for visting my %s\n",json_object_get_string(name)); 
+}
