@@ -38,7 +38,8 @@ void whichPlanet() {
         userPlanet();
     }
     else {
-        printf("Sorry, I didn't get that...");
+        printf("Sorry, I didn't get that...\n");
+        return whichPlanet();
     }   
 }
 
